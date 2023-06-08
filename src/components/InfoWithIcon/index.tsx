@@ -2,12 +2,12 @@ import { ReactNode } from "react";
 import { IconContainer, InfoWithIconContainer } from "./styles";
 
 interface InfoWithIconProps {
+  iconBg: string;
   icon: ReactNode;
   text: string | ReactNode;
-  iconBg: string;
 }
 
-export function InfoWithIcon({ icon, text, iconBg }: InfoWithIconProps) {
+export function InfoWithIcon({ iconBg, icon, text }: InfoWithIconProps) {
   return (
     <InfoWithIconContainer>
       <IconContainer iconBg={iconBg}>{icon}</IconContainer>
